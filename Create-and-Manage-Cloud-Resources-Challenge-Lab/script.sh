@@ -4,6 +4,7 @@ gcloud compute instances create nucleus-jumphost \
           --machine-type f1-micro  \
           --image-family debian-9  \
           --image-project debian-cloud \
+          --no-address
           
 gcloud container clusters create nucleus-backend \
           --num-nodes 1 \
